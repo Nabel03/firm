@@ -6,7 +6,8 @@
   #section {
     background-image: url(./images/background.jpg);
     background-size: cover;
-    background-position: center;
+    -webkit-background-size: cover;
+    background-position: center center;
     padding-bottom: 300px;
   }
 }
@@ -32,7 +33,6 @@
   color: white;
   margin-top: 150px;
   padding-left: 50px;
-  border-style: solid;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   width: 500px;
@@ -43,7 +43,7 @@
   color: maroon !important;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 @media screen and (max-width: 524px) {
   #header {
@@ -51,11 +51,41 @@
     color: white;
     margin-top: 150px;
     padding-left: 50px;
-    border-style: solid;
     font-family: "Lato", sans-serif;
     font-weight: bold;
-    width: 500px;
+    width: auto;
     height: 300px;
     padding-bottom: 50px;
   }
 }
+.btn {
+  background-color: maroon !important;
+  font-weight: bold;
+}
+span:before {
+  content: '';
+  animation: animate infinite 8s;
+}
+@keyframes animate{
+  20%{
+    content: 'Freedom.';
+  }
+  40%{
+    content: 'Rights.';
+  }
+  60%{
+    content: 'Case.';
+  }
+  80%{
+    content:  'Custody.';
+  }
+  100%{
+    content:  'Properties.';
+  }
+}
+.txt-rotate {
+  color: maroon !important;
+  font-family: poppins;
+  font-weight: bold;
+}
+
